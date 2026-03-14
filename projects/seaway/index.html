@@ -1,0 +1,166 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Seaway — ALIASOFT</title><meta name="description" content="ALIASOFT — Backend engineering, distributed systems, event-driven architecture."><meta name="author" content="Aliasoft"><link rel="icon" href="/favicon.ico"><meta name="astro-prefetch" content="hover"><!-- OpenGraph --><meta property="og:type" content="website"><meta property="og:title" content="Aliasoft — Full-Stack Engineering"><meta property="og:description" content="Backend engineering, distributed systems and React applications."><meta property="og:image" content="https://aliasoft.dev/og-image.png"><meta property="og:url" content="https://aliasoft.dev"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Aliasoft — Full-Stack Engineering"><meta name="twitter:description" content="Backend engineering, distributed systems and React applications."><meta name="twitter:image" content="https://aliasoft.dev/og-image.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/_astro/Footer.N_ZDgMgX.css"></head> <body class="bg-neutral-950 text-neutral-100 antialiased font-[Inter]"> <div class="mx-auto max-w-7xl px-6 lg:px-8">  <header class="flex items-center justify-between py-8"> <a href="/" class="flex items-center gap-2 text-sm font-semibold tracking-[0.25em] uppercase text-white"> <img src="/favicon.png" alt="Aliasoft" class="h-10 opacity-80 hover:opacity-100 transition">
+aliasoft.dev
+</a> <nav class="hidden md:flex gap-8 text-sm text-neutral-400"> <a href="/expertise" class="hover:text-white transition">Expertise</a> <a href="/projects/seaway" class="hover:text-white transition">Seaway</a> <a href="/services" class="hover:text-white transition">Services</a> <a href="/about" class="hover:text-white transition">About</a> <a href="/contact" class="hover:text-white transition">Contact</a> </nav> </header> <main class="py-24  max-w-6xl mx-auto"> <p class="text-xs uppercase tracking-[0.3em] text-neutral-500">
+Project
+</p> <h1 class="mt-6 text-4xl md:text-5xl font-semibold bg-gradient-to-r from-white to-neutral-400 bg-clip-text text-transparent">
+Seaway
+</h1> <div class="mt-8"> <!--<a--> <!--        href="https://github.com/aliasoft/seaway"--> <!--        target="_blank"--> <!--        class="border border-neutral-700 px-6 py-3 rounded-lg text-sm hover:border-neutral-500 transition"--> <!--&gt;--> <!--    View source code on GitHub--> <!--</a>--> <a href="https://alak8ba.github.io/engineering-notes/projects/seaway/adrs/" target="_blank" class="border border-neutral-700 px-6 py-3 rounded-lg text-sm hover:border-neutral-500 transition"> <!--ADRS project case study-->
+Engineering notes – ADRS
+</a> </div> <p class="mt-8 text-neutral-400 max-w-2xl">
+Seaway is a full-stack architecture project designed to demonstrate
+            modern software engineering practices including clean architecture,
+            event-driven systems and production-ready APIs.
+
+            The platform combines a scalable Java backend with a React frontend
+            and production-ready deployment patterns.
+</p> <section class="mt-24"> <h2 class="text-3xl font-semibold text-white">
+System architecture
+</h2> <p class="mt-6 text-neutral-400 max-w-3xl">
+Seaway is designed using a layered architecture inspired by
+                hexagonal architecture principles. The system separates domain,
+                application logic and infrastructure to maintain clear boundaries
+                and long-term maintainability.
+</p> <div class="grid md:grid-cols-2 gap-10 mt-12"> <div class="border border-neutral-800 rounded-xl p-6 hover:border-neutral-600 hover:bg-neutral-900/40 transition"> <h3 class="text-white font-medium">
+Domain layer
+</h3> <p class="mt-4 text-sm text-neutral-400">
+Contains business entities, domain logic and invariants.
+                        The domain remains isolated from frameworks and infrastructure
+                        dependencies.
+</p> </div> <div class="border border-neutral-800 rounded-xl p-6 hover:border-neutral-600 hover:bg-neutral-900/40 transition"> <h3 class="text-white font-medium">
+Application layer
+</h3> <p class="mt-4 text-sm text-neutral-400">
+Implements use cases through command and query handlers.
+                        Coordinates domain logic without containing business rules.
+</p> </div> <div class="border border-neutral-800 rounded-xl p-6 hover:border-neutral-600 hover:bg-neutral-900/40 transition"> <h3 class="text-white font-medium">
+Infrastructure layer
+</h3> <p class="mt-4 text-sm text-neutral-400">
+Adapters for persistence, messaging and external services
+                        including PostgreSQL repositories and Kafka producers/consumers.
+</p> </div> <div class="border border-neutral-800 rounded-xl p-6 hover:border-neutral-600 hover:bg-neutral-900/40 transition"> <h3 class="text-white font-medium">
+API layer
+</h3> <p class="mt-4 text-sm text-neutral-400">
+REST controllers exposing validated endpoints with
+                        standardized error responses and secure filtering.
+</p> </div> </div> </section> <section class="mt-24"> <h2 class="text-3xl font-semibold text-white">
+Frontend interface
+</h2> <p class="mt-6 text-neutral-400 max-w-3xl">
+The user interface is implemented with React and Tailwind CSS,
+                providing a lightweight client for interacting with the API.
+                The frontend focuses on clear component boundaries and
+                maintainable UI structure.
+</p> <ul class="mt-8 space-y-3 text-neutral-400 text-sm"> <li>React component architecture</li> <li>Tailwind CSS for design system consistency</li> <li>API integration with backend services</li> </ul> </section> <section class="mt-24"> <h2 class="text-3xl font-semibold text-white">
+System architecture overview
+</h2> <div class="mt-12"> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();</script><script>(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="ZlzVSD" prefix="r3" component-url="/_astro/Mermaid.DcYwncky.js" component-export="default" renderer-url="/_astro/client.BStwJ2xO.js" props="{&quot;chart&quot;:[0,&quot;\nflowchart TD\n\nBrowser[Client Browser]\nFrontend[React Frontend]\nProxy[Nginx Reverse Proxy]\nAPI[Spring Boot API]\n\nKafka[(Kafka)]\nDB[(PostgreSQL)]\n\nProducer[Event Producer]\nConsumer[Event Consumer]\n\nBrowser --&gt; Frontend\nFrontend --&gt; Proxy\nProxy --&gt; API\n\nAPI --&gt; DB\nAPI --&gt; Producer\n\nProducer --&gt; Kafka\nKafka --&gt; Consumer\nConsumer --&gt; DB\n\n&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;Mermaid&quot;,&quot;value&quot;:true}" await-children><div class="mermaid">
+flowchart TD
+
+Browser[Client Browser]
+Frontend[React Frontend]
+Proxy[Nginx Reverse Proxy]
+API[Spring Boot API]
+
+Kafka[(Kafka)]
+DB[(PostgreSQL)]
+
+Producer[Event Producer]
+Consumer[Event Consumer]
+
+Browser --&gt; Frontend
+Frontend --&gt; Proxy
+Proxy --&gt; API
+
+API --&gt; DB
+API --&gt; Producer
+
+Producer --&gt; Kafka
+Kafka --&gt; Consumer
+Consumer --&gt; DB
+
+</div><!--astro:end--></astro-island> </div> </section> <section class="mt-24"> <h2 class="text-3xl font-semibold text-white">
+Hexagonal architecture
+</h2> <div class="mt-12"> <astro-island uid="1w8pyM" prefix="r4" component-url="/_astro/Mermaid.DcYwncky.js" component-export="default" renderer-url="/_astro/client.BStwJ2xO.js" props="{&quot;chart&quot;:[0,&quot;\nflowchart LR\n\nUser[API Controller]\nApp[Application Layer]\nDomain[Domain Layer]\nInfra[Infrastructure]\n\nUser --&gt; App\nApp --&gt; Domain\nDomain --&gt; Infra\n\n&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;Mermaid&quot;,&quot;value&quot;:true}" await-children><div class="mermaid">
+flowchart LR
+
+User[API Controller]
+App[Application Layer]
+Domain[Domain Layer]
+Infra[Infrastructure]
+
+User --&gt; App
+App --&gt; Domain
+Domain --&gt; Infra
+
+</div><!--astro:end--></astro-island> </div> </section> <section class="mt-24"> <h2 class="text-3xl font-semibold text-white">
+Event-driven workflows
+</h2> <p class="mt-6 text-neutral-400 max-w-3xl">
+The platform uses Kafka to orchestrate asynchronous workflows
+                between system components. Events allow services to remain loosely
+                coupled while ensuring scalability and resilience.
+</p> <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12"> <div class="border border-neutral-800 rounded-xl p-6 hover:border-neutral-600 hover:bg-neutral-900/40 transition"> <h3 class="text-white font-medium">
+Event publishing
+</h3> <p class="mt-4 text-sm text-neutral-400">
+Domain events are published when significant state changes occur,
+                        allowing other services to react asynchronously.
+</p> </div> <div class="border border-neutral-800 rounded-xl p-6 hover:border-neutral-600 hover:bg-neutral-900/40 transition"> <h3 class="text-white font-medium">
+Retry strategies
+</h3> <p class="mt-4 text-sm text-neutral-400">
+Failed events are retried with backoff strategies and eventually
+                        redirected to dead-letter topics for inspection.
+</p> </div> <div class="border border-neutral-800 rounded-xl p-6 hover:border-neutral-600 hover:bg-neutral-900/40 transition"> <h3 class="text-white font-medium">
+Idempotent consumers
+</h3> <p class="mt-4 text-sm text-neutral-400">
+Consumers are designed to process events safely multiple times,
+                        ensuring system consistency in distributed environments.
+</p> </div> </div> </section> <section class="mt-24"> <h2 class="text-3xl font-semibold text-white">
+Event processing flow
+</h2> <div class="mt-12"> <astro-island uid="tUdbp" prefix="r5" component-url="/_astro/Mermaid.DcYwncky.js" component-export="default" renderer-url="/_astro/client.BStwJ2xO.js" props="{&quot;chart&quot;:[0,&quot;\nsequenceDiagram\n\nparticipant API\nparticipant Kafka\nparticipant Consumer\nparticipant DB\n\nAPI-&gt;&gt;Kafka: Publish Event\nKafka-&gt;&gt;Consumer: Consume Event\nConsumer-&gt;&gt;DB: Persist Data\n\n&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;Mermaid&quot;,&quot;value&quot;:true}" await-children><div class="mermaid">
+sequenceDiagram
+
+participant API
+participant Kafka
+participant Consumer
+participant DB
+
+API-&gt;&gt;Kafka: Publish Event
+Kafka-&gt;&gt;Consumer: Consume Event
+Consumer-&gt;&gt;DB: Persist Data
+
+</div><!--astro:end--></astro-island> </div> </section> <section class="mt-24"> <h2 class="text-3xl font-semibold text-white">
+Technical highlights
+</h2> <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12"> <div class="border border-neutral-800 rounded-xl p-6 hover:border-neutral-600 hover:bg-neutral-900/40 transition"> <h3 class="text-white font-medium">
+Hexagonal architecture
+</h3> <p class="mt-4 text-sm text-neutral-400">
+Clear separation between domain, application and infrastructure
+                        to maintain long-term maintainability and testability.
+</p> </div> <div class="border border-neutral-800 rounded-xl p-6 hover:border-neutral-600 hover:bg-neutral-900/40 transition"> <h3 class="text-white font-medium">
+CQRS design
+</h3> <p class="mt-4 text-sm text-neutral-400">
+Command and query separation allowing independent evolution
+                        of read models and write operations.
+</p> </div> <div class="border border-neutral-800 rounded-xl p-6 hover:border-neutral-600 hover:bg-neutral-900/40 transition"> <h3 class="text-white font-medium">
+Event-driven workflows
+</h3> <p class="mt-4 text-sm text-neutral-400">
+Kafka-based messaging enabling loosely coupled services
+                        and resilient distributed processing.
+</p> </div> </div> </section> <section class="mt-24"> <h2 class="text-3xl font-semibold text-white">
+Security practices
+</h2> <div class="grid md:grid-cols-2 gap-10 mt-12"> <div> <ul class="space-y-3 text-neutral-400 text-sm"> <li>DTO validation using Bean Validation</li> <li>Centralized error handling</li> <li>Secure pagination and filtering</li> <li>Secrets externalized via environment variables</li> <li>OWASP-aware API design</li> </ul> </div> <div> <ul class="space-y-3 text-neutral-400 text-sm"> <li>Docker container hardening</li> <li>Non-root container execution</li> <li>Read-only filesystem</li> <li>Reverse proxy via Nginx</li> <li>Rate limiting at infrastructure level</li> </ul> </div> </div> </section> <div class="mt-16 grid md:grid-cols-2 gap-10"> <div> <h3 class="text-white font-medium">
+Architecture
+</h3> <ul class="mt-4 text-neutral-400 space-y-2 text-sm"> <li>Hexagonal architecture</li> <li>CQRS pattern</li> <li>Kafka event processing</li> <li>PostgreSQL</li> </ul> </div> <div> <h3 class="text-white font-medium">
+Stack
+</h3> <ul class="mt-4 text-neutral-400 space-y-2 text-sm"> <li>Java 21</li> <li>Spring Boot</li> <li>Kafka</li> <li>PostgreSQL</li> <li>React</li> <li>Tailwind CSS</li> <li>Docker</li> <li>Nginx</li> </ul> </div> </div> </main> <footer class="border-t border-neutral-800 py-16 mt-24"> <div class="flex flex-col md:flex-row md:justify-between gap-10"> <!-- Brand --> <div> <p class="text-neutral-200 font-medium text-sm tracking-wide">
+© 2026 Aliasoft
+</p> <p class="mt-2 text-neutral-400 text-sm max-w-sm">
+full-stack engineering, backend architecture and distributed systems.
+</p> </div> <!-- Contact --> <div class="space-y-2 text-sm text-neutral-400"> <p>
+Email:
+<a href="mailto:contact@aliasoft.dev" class="text-white transition">
+contact@aliasoft.dev
+</a> </p> <p>
+Phone:
+<a href="tel:+33636422463" class="hover:text-white">
++33 6 36 42 24 63
+</a> </p> </div> <!-- Social --> <div class="flex gap-6 text-sm text-neutral-400"> <a href="https://github.com/alak8ba" class="hover:text-white transition">
+GitHub
+</a> <a href="https://www.linkedin.com/in/a-kouba-dev" class="hover:text-white transition">
+LinkedIn
+</a> </div> </div> </footer>  </div> </body></html>
